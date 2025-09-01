@@ -1,11 +1,11 @@
 FROM node:lts-slim
 
 EXPOSE 3000
-WORKDIR /home/node/app
+WORKDIR /home/jduhig/node-webapp
 RUN <<EOF
 npm install
 EOF
 
-COPY . /home/node/app
+COPY . /home/jduhig/node-webapp
 
 CMD ["npm", "start"]
